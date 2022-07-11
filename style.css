@@ -1,0 +1,202 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/**fuente general**/
+html { font-family: 'Roboto', sans-serif; }
+
+body {margin: 0;
+    background-color:rgb(0, 0, 0)}
+h1 {font-size: 3.7em; }
+h2 {font-size: 2.8em;}
+h3 {font-size: 2.2em;}
+p  {font-size: 1.8em;;}
+ul {list-style: none;}
+a  {text-decoration: none;}
+.textoSecundario { color: rgb(245,245,245);}
+
+.boton1{
+    background-color: rgb(110, 206, 196);
+    width: fit-content ;
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 7%;
+    padding: 10px 20px;
+    margin: 15px auto;
+    box-shadow: 2px 2px 10px rgb(245,245,245,0.5);
+}
+.boton1:hover{
+    background-color:rgb(31, 168, 143);
+}
+
+.boton1 a {
+    text-decoration: none;
+    color:rgb(28, 2, 55);
+    font-weight: bold;
+    font-size: 2.8em;
+    height: 15px;
+}
+.boton2{
+    background-color: rgb(110, 206, 196);
+    width: fit-content ;
+    border: solid 3px rgb(28, 2, 55);
+    border-radius: 7%;
+    padding: 10px 20px;
+    margin: 15px auto;
+    box-shadow: 2px 2px 10px rgb(245,245,245,0.5);
+}
+.boton2:hover{
+    background-color:rgb(31, 168, 143);
+}
+.boton2 a {
+    text-decoration: none;
+    color:rgb(28, 2, 55);
+    font-weight: bold;
+    font-size: 1em;
+    height: 15px;
+}
+button{
+font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color:rgb(209, 38, 189) ;
+}
+header {
+    max-width: 1400px;
+    margin:auto;
+    background-color: black;
+
+}
+header .container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;    
+}
+header a {
+    padding:9px;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(110, 206, 196)
+}
+header ul {padding-bottom: 15px;}
+header a:hover{
+    color: rgb(209, 38, 189);
+}
+
+.piepagina {
+display: flex;
+flex-direction:column ;
+text-align: center;
+}
+.piepagina ul{ padding-bottom: 30px;}
+.piepagina li { padding: 5px 5px 5px;}
+
+.piepagina a {
+    color:rgb(110, 206, 196);
+    text-decoration: none;
+    font-weight: bold;
+}
+.piepagina a:hover {
+    color:rgb(209, 38, 189)
+}
+
+
+h1 { color: rgb(255, 255, 255);}
+h2 {color: rgb(209, 38, 189); } 
+h3 {color:rgb(255, 255, 255) ;}
+.subtitulosSecundarios { color:rgb(209, 38, 189) ;}
+
+.container img {
+    height: 100px;}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )  
+    ,url("imagenes/mujer-levanta-pesas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#comunidad .container {
+    text-align: center;
+    padding: 190px 15px;
+}
+#comunidad {
+     background-color: rgb(35,35,35);
+     text-align: center;                  
+}
+#comunidad .container{
+    padding:140px 0px;
+}
+#comunidad h2 {
+    margin-top: 0px;
+    padding-bottom: 30px;
+}
+#comunidad h3{
+    padding-bottom: 20px;
+}
+#comunidad .opcion{
+    padding:50px;
+    margin: 18px;
+    border-radius: 3%;
+}
+#comunidad p {
+    display: none;
+}
+
+.opcion:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/team-cf.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.opcion:nth-last-child(1){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/hombre-anillas.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+@media (min-width:720px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right:20px;
+    }
+    .container nav ul{
+        flex-direction: row-reverse ;
+    }
+}
