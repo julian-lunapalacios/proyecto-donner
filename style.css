@@ -16,6 +16,8 @@ ul {list-style: none;}
 a  {text-decoration: none;}
 .textoSecundario { color: rgb(245,245,245);}
 
+/* BOTONES */
+
 .boton1{
     background-color: rgb(110, 206, 196);
     width: fit-content ;
@@ -56,7 +58,7 @@ a  {text-decoration: none;}
     height: 15px;
 }
 button{
-font-size: 1.25em;
+    font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 5px;
@@ -65,6 +67,15 @@ font-size: 1.25em;
     color: white;
     background-color:rgb(209, 38, 189) ;
 }
+
+button:hover {
+    background: rgb(158, 25, 143);
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+/* CABECERA */
+
 header {
     max-width: 1400px;
     margin:auto;
@@ -92,6 +103,8 @@ header ul {padding-bottom: 15px;}
 header a:hover{
     color: rgb(209, 38, 189);
 }
+
+/* FOOTER */
 
 .piepagina {
 display: flex;
@@ -185,6 +198,16 @@ h3 {color:rgb(255, 255, 255) ;}
     background-position: center center;
     background-size: cover;
 }
+
+/* animacion */
+img { 
+    transition: all 1.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
 
 @media (min-width:720px){
     header .container{
