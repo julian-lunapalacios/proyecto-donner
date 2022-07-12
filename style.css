@@ -120,7 +120,7 @@ text-align: center;
     font-weight: bold;
 }
 .piepagina a:hover {
-    color:rgb(209, 38, 189)
+    color:rgb(205, 245, 45)
 }
 
 
@@ -207,6 +207,8 @@ img {
 img:hover {
     transform: scale(1.1);
 }
+
+
 
 
 @media (min-width:720px){
