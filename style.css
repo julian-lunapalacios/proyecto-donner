@@ -99,7 +99,9 @@ header a {
     font-weight: bold;
     color:rgb(110, 206, 196)
 }
-header ul {padding-bottom: 15px;}
+header ul {
+    padding-bottom: 15px;
+}
 header a:hover{
     color: rgb(209, 38, 189);
 }
@@ -111,8 +113,13 @@ display: flex;
 flex-direction:column ;
 text-align: center;
 }
-.piepagina ul{ padding-bottom: 30px;}
-.piepagina li { padding: 5px 5px 5px;}
+.piepagina ul{
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.piepagina li { 
+    padding: 5px 5px 5px;
+}
 
 .piepagina a {
     color:rgb(110, 206, 196);
@@ -126,7 +133,8 @@ text-align: center;
 
 h1 { color: rgb(255, 255, 255);}
 h2 {color: rgb(209, 38, 189); } 
-h3 {color:rgb(255, 255, 255) ;}
+h3 {color:rgb(255, 255, 255) ;
+    text-align: center;}
 .subtitulosSecundarios { color:rgb(209, 38, 189) ;}
 
 .container img {
@@ -151,7 +159,7 @@ h3 {color:rgb(255, 255, 255) ;}
     background-position: center center;
 }
 
-#comunidad .container {
+#comunidad .container2 {
     text-align: center;
     padding: 190px 15px;
 }
@@ -159,7 +167,7 @@ h3 {color:rgb(255, 255, 255) ;}
      background-color: rgb(35,35,35);
      text-align: center;                  
 }
-#comunidad .container{
+#comunidad .container2{
     padding:140px 0px;
 }
 #comunidad h2 {
@@ -249,7 +257,7 @@ img:hover {
 }
 .gridContainer1 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: minmax( 200px, auto);
     gap: 30px;
     padding: 30px;  
@@ -270,7 +278,7 @@ img:hover {
 
 .gridContainer2{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: minmax(200, auto);
     gap: 30px;
     padding: 30px;
@@ -287,16 +295,27 @@ img:hover {
 }
 
 @media (min-width:720px){
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    
     header .container{
+        flex-direction: row;
+        justify-content:space-between;
+    }
+  
+    header ul{
+        padding-bottom: 0;
+    }
+
+    .piepagina{
         flex-direction: row;
         justify-content: space-between;
     }
-    .container nav {
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right:20px;
+    .piepagina ul{
+        flex-direction:row-reverse;
+        padding-right: 30px;
     }
-    .container nav ul{
-        flex-direction: row-reverse ;
-    }
+
 }
