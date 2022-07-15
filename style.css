@@ -7,7 +7,7 @@
 html { font-family: 'Roboto', sans-serif; }
 
 body {
-    font-family:'Roboto', sans-serif; ;
+    font-family:'Roboto', sans-serif;
     margin: 0;
     background-color:rgb(0, 0, 0)}
 h1 {font-size: 3.7em; }
@@ -77,8 +77,21 @@ button:hover {
 }
 
 /* CABECERA */
+.container-fluid{
+    background-color: rgb(0, 0, 0);
+}
+.navbar-collapse {
+    flex-grow: initial;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.2em;
+    color:rgb(31, 168, 143)
+}
 
-header {
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(209, 38, 189);
+}
+/* header {
     max-width: 1400px;
     margin:auto;
     background-color: black;
@@ -107,7 +120,7 @@ header ul {
 header a:hover{
     color: rgb(209, 38, 189);
 }
-
+ */
 /* FOOTER */
 
 .piepagina {
