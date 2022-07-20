@@ -17,6 +17,7 @@ p  {font-size: 1.8em;;}
 ul {list-style: none;}
 a  {text-decoration: none;}
 .textoSecundario { color: rgb(245,245,245);}
+h4 { text-align: center;}
 
 /* BOTONES */
 
@@ -76,6 +77,7 @@ button:hover {
     transform: scale(1.1);
 }
 
+
 /* CABECERA */
 .container-fluid{
     background-color: rgb(0, 0, 0);
@@ -91,38 +93,19 @@ button:hover {
 .navbar-light .navbar-nav .nav-link:hover{
     color: rgb(209, 38, 189);
 }
-/* header {
-    max-width: 1400px;
-    margin:auto;
-    background-color: black;
+
+.navbar-toggler-icon {
+    color: aqua;
 
 }
-header .container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-header nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10px;    
-}
-header a {
-    padding:9px;
-    text-decoration: none;
-    font-weight: bold;
-    color:rgb(110, 206, 196)
-}
-header ul {
-    padding-bottom: 15px;
-}
-header a:hover{
-    color: rgb(209, 38, 189);
-}
- */
+
+
+
 /* FOOTER */
-
+h4{
+    color: rgb(209, 38, 189);
+    font-size: 1.7em;
+}
 .piepagina {
 display: flex;
 flex-direction:column ;
@@ -142,8 +125,10 @@ text-align: center;
     font-weight: bold;
 }
 .piepagina a:hover {
-    color:rgb(205, 245, 45)
+    color:rgb(209, 38, 189);
 }
+
+
 
 
 h1 { color: rgb(255, 255, 255);}
@@ -179,7 +164,7 @@ h3 {color:rgb(255, 255, 255) ;
     padding: 190px 15px;
 }
 #comunidad {
-     background-color: rgb(35,35,35);
+     background-color:black;
      text-align: center;                  
 }
 #comunidad .container2{
@@ -256,6 +241,43 @@ img:hover {
     background-position: center center;
 }
 
+#hero5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )  
+    ,url("imagenes/box-alumnos2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )  
+    ,url("imagenes/box-alumnos3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;}
+
 .grid-itemVideo {
     display: flex;
     align-items: center;
@@ -331,13 +353,25 @@ img:hover {
     background-position: center center;
 }
 
+
+.formulario {
+    border-color: aqua;
+    border-style: double;
+    border: 3px
+}
+
 label {
     color: rgb(31, 168, 143);
 }
 legend {
     color:rgb(209, 38, 189)
 }
-
+.btn{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgb(209 38 209 / 90%);
+}
 @media (min-width:720px){
     header {
         position: fixed;
