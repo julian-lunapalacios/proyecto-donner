@@ -13,7 +13,8 @@ body {
 h1 {font-size: 3.7em; }
 h2 {font-size: 2.8em;}
 h3 {font-size: 2.2em;}
-p  {font-size: 1.8em;;}
+p  {font-size: 1.8em;;
+color:white;}
 ul {list-style: none;}
 a  {text-decoration: none;}
 .textoSecundario { color: rgb(245,245,245);}
@@ -102,7 +103,7 @@ button:hover {
 
 
 /* FOOTER */
-h4{
+/* h4{
     color: rgb(209, 38, 189);
     font-size: 1.7em;
 }
@@ -127,9 +128,38 @@ text-align: center;
 .piepagina a:hover {
     color:rgb(209, 38, 189);
 }
+ */
+footer .footer_sponsor {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(209, 38, 189);
+    font-size: 2.5em;
+}
+footer .footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+ footer ul {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
 
+}
+footer a {
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(110, 206, 196);
+    font-size: 1.2em;
+}
+footer a:hover {
+    color: rgb(209, 38, 189);
+}
 
-
+/* general */
 
 h1 { color: rgb(255, 255, 255);}
 h2 {color: rgb(209, 38, 189); } 
@@ -137,7 +167,7 @@ h3 {color:rgb(255, 255, 255) ;
     text-align: center;}
 .subtitulosSecundarios { color:rgb(209, 38, 189) ;}
 
-.container img {
+.container .logo {
     height: 100px;}
 
 #hero {
@@ -354,11 +384,6 @@ img:hover {
 }
 
 
-.formulario {
-    border-color: aqua;
-    border-style: double;
-    border: 3px
-}
 
 label {
     color: rgb(31, 168, 143);
@@ -372,28 +397,55 @@ legend {
 .navbar-light .navbar-nav .nav-link.active {
     color: rgb(209 38 209 / 90%);
 }
-@media (min-width:720px){
-    header {
-        position: fixed;
+
+/* atletas y staff */
+*{
+    box-sizing: border-box;
+}
+img {
+    width:100%
+}
+.row {
+    display: flex;
+    padding:4px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex:25%;
+    padding: 5px;
+}
+.column img {
+    margin-top: 5px;
+}
+@media (max-width: 550px){
+    .column{
+        flex:100%;
+
+    }
+}
+@media (max-width:750px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@media(min-width:720px) {
+    footer {
         width: 100%;
     }
-    
-    header .container{
-        flex-direction: row;
-        justify-content:space-between;
+    footer  .footer_container{
+        flex-direction:row;
+        padding-bottom: 30px;
+        justify-content: space-evenly;
     }
-  
-    header ul{
-        padding-bottom: 0;
+    footer ul {
+        flex-direction:row;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 25px;
+
     }
 
-    .piepagina{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .piepagina ul{
-        flex-direction:row-reverse;
-        padding-right: 30px;
-    }
 
 }
