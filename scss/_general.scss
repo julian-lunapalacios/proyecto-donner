@@ -1,0 +1,30 @@
+footer{
+    
+    .footer_container{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        
+        .footer_sponsor{
+            margin:0;
+            padding: 25px 30px;
+            font-weight: bold;
+            color:$color-a;
+            font-size: 2.5em;}          
+                    ul{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    padding-bottom: 30px;
+                        a{
+                        padding: 5px 15px;
+                        text-decoration:none;
+                        font-weight:bolder;
+                         &:hover{
+                            color: map-get(&colores, "color-b");
+                         }
+                        } 
+                     }
+         }     
+
+}

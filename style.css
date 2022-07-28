@@ -99,36 +99,8 @@ button:hover {
     color: aqua;
 
 }
+/* footer */
 
-
-
-/* FOOTER */
-/* h4{
-    color: rgb(209, 38, 189);
-    font-size: 1.7em;
-}
-.piepagina {
-display: flex;
-flex-direction:column ;
-text-align: center;
-}
-.piepagina ul{
-    flex-direction: column;
-    padding-bottom: 30px;
-}
-.piepagina li { 
-    padding: 5px 5px 5px;
-}
-
-.piepagina a {
-    color:rgb(110, 206, 196);
-    text-decoration: none;
-    font-weight: bold;
-}
-.piepagina a:hover {
-    color:rgb(209, 38, 189);
-}
- */
 footer .footer_sponsor {
     margin: 0;
     padding: 25px 30px;
